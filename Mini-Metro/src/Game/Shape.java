@@ -2,7 +2,7 @@ package Game;
 
 public enum Shape {
     CERCLE,
-	SQUARE,
-	TRIANGLE,
-	PLUS
+    SQUARE,
+    TRIANGLE,
+    PLUS
 }

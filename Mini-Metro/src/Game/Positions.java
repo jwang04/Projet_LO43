@@ -16,7 +16,7 @@ public class Positions {
         SetX(X);
         SetY(Y);
     }
-    
+
     public void SetX(int X) {
         x = X;
     }

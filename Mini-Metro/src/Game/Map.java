@@ -8,9 +8,9 @@ import java.util.List;
  */
 
 public class Map {
-    private Times  time  = new Times();
-    private Scores score = new Scores();
-    private List<Stations> stations = new LinkedList<Stations>();
+    private Times           time      = new Times();
+    private Scores          score     = new Scores();
+    private List<Stations>  stations  = new LinkedList<Stations>();
     private List<Passagers> passagers = new LinkedList<Passagers>();
 
     public void PutLignes(Lignes ligne) {
@@ -44,8 +44,8 @@ public class Map {
     public void SetScores() {
 
     }
-    
-    public void AddPassagers(Passagers passager){
+
+    public void AddPassagers(Passagers passager) {
         passagers.add(passager);
     }
 }

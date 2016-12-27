@@ -1,12 +1,12 @@
 package Game;
 
 public enum Color {
-    BLUE, 
+    BLUE,
     GREEN,
-	RED,
-	BLACK,
-	YELLOW,
-	CYAN,
-	BROWN,
-	ORANGE
+    RED,
+    BLACK,
+    YELLOW,
+    CYAN,
+    BROWN,
+    ORANGE
 }
