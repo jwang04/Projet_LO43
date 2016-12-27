@@ -1,8 +1,16 @@
 package Game;
 
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * Created by Michel HUANG
+ */
+
 public class Map {
     private Times  time  = new Times();
     private Scores score = new Scores();
+    private List<Stations> stations = new LinkedList<Stations>();
 
     public void PutLignes(Lignes ligne) {
 
@@ -20,8 +28,8 @@ public class Map {
 
     }
 
-    public Stations GetStations() {
-
+    public List<Stations> GetStations() {
+        return stations;
     }
 
     public Times GetTimes() {
@@ -33,6 +41,10 @@ public class Map {
     }
 
     public void SetScores() {
+
+    }
+    
+    public void AddPassagers(Passagers passagers){
         
     }
 }
