@@ -7,26 +7,26 @@ public class Routes {
   
   private Stations StationStart = new Stations();
   private Stations StationArrival = new Stations();
-  private list<Stations> stations = new LinkedList<Stations>();
+  private List<Stations> stations = new LinkedList<Stations>();
   
   public void SetStationStart(Stations start){
-    return start;
+    StationStart = start;
   }
   
   public void SetStationArrival(Stations arrival){
-    return arrival;
+    StationArrival = arrival;
   }
   
-  public list<Stations> GetRoute(){
-    ////
+  public List<Stations> GetRoute(){
+    return stations;
   }
   
   public Stations GetStationStart(){
-    ////
+    return StationStart;
   }
   
   public Stations GetStationArrival(){
-    ////
+    return StationArrival;
   }
   
 }

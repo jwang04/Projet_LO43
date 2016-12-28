@@ -7,6 +7,15 @@ public class Inventaire {
   private int NumberPassagers;
   private int NumberWagons;
   private int NumberTrains;
+  private int NbStation;
+  private List<Lignes> lignes = new LinkedList<Lignes>();
+  
+  public Inventaire(){
+      NumberPassagers = 0;
+      NumberTrains = 0;
+      NumberTrains = 0;
+      NbStation = 0;
+  }
   
   public int GetNbPassager(){
     return NumberPassagers;
@@ -18,6 +27,10 @@ public class Inventaire {
   
   public int GetNbTrains(){
     return NumberTrains;
+  }
+  
+  public int GetNbStation(){
+      return NbStation;
   }
   
   public void SetNbPassagers(int NP){
@@ -32,8 +45,12 @@ public class Inventaire {
     NumberTrains = NT;
   }
   
-  public list<Lignes> GetNbLignes(){
-    
+  public void SetNbStation(int NS){
+      NbStation = NS; 
+  }
+  
+  public List<Lignes> GetNbLignes(){
+    return lignes;
   }
   
 }

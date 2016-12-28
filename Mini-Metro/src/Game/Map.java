@@ -12,6 +12,7 @@ public class Map {
     private Scores          score     = new Scores();
     private List<Stations>  stations  = new LinkedList<Stations>();
     private List<Passagers> passagers = new LinkedList<Passagers>();
+    private Stations        sta       = new Stations();
 
     public void PutLignes(Lignes ligne) {
 
@@ -26,7 +27,7 @@ public class Map {
     }
 
     public void SetStations(Stations station) {
-
+        sta = station;
     }
 
     public List<Stations> GetStations() {
