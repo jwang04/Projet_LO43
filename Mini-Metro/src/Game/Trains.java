@@ -18,13 +18,13 @@ public class Trains {
      */
 
     public Trains() {
-        passagers = new LinkedList<Passagers>();
-        pos = new Positions();
+        this.passagers = new LinkedList<Passagers>();
+        this.pos = new Positions();
     }
 
     public Trains(Positions position) {
         SetPosition(position);
-        passagers = new LinkedList<Passagers>();
+        this.passagers = new LinkedList<Passagers>();
     }
 
     public List<Passagers> GetPassagers() {
@@ -39,8 +39,8 @@ public class Trains {
         return pos;
     }
 
-    public Positions SetPosition(Positions position) {
-        return pos = position;
+    public void SetPosition(Positions position) {
+        pos = position;
     }
 
     public List<Wagons> GetWagons() {
@@ -56,6 +56,6 @@ public class Trains {
     }
 
     public void AddWagon(Wagons wag) {
-        wagons.add(wag);
+        this.wagons.add(wag);
     }
 }

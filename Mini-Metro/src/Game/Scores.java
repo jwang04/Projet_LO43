@@ -5,11 +5,11 @@ public class Scores {
     private int points;
 
     public Scores() {
-        points = 0;
+        this.points = 0;
     }
 
     public void AddScores() {
-        points++;
+        this.points++;
     }
 
     public int GetScore() {

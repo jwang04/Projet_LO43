@@ -4,11 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Lignes {
-    private Stations     Start    = new Stations();
-    private Stations     Terminal = new Stations();
-    private Color        col;
-    private List<Trains> trains   = new LinkedList<Trains>();
-    private List<Wagons> wagons   = new LinkedList<Wagons>();
+    private Stations       Start    = new Stations();
+    private Stations       Terminal = new Stations();
+    private Color          col;
+    private List<Trains>   trains   = new LinkedList<Trains>();
+    private List<Wagons>   wagons   = new LinkedList<Wagons>();
+    private List<Stations> last     = new LinkedList<Stations>();
 
     public Lignes(Color c, Stations s, Stations t) {
         this.col = c;
@@ -61,7 +62,7 @@ public class Lignes {
     }
 
     public void AddStation(Stations s) {
-        Terminal.add(s);
+        this.last.add(s);
     }
 
     public void AddWagon(Wagons wa) {

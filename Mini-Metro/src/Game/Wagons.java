@@ -13,8 +13,8 @@ public class Wagons {
     private Positions       pos           = new Positions();
 
     public Wagons() {
-        passagers = new LinkedList<Passagers>();
-        pos = new Positions();
+        this.passagers = new LinkedList<Passagers>();
+        this.pos = new Positions();
     }
 
     public List<Passagers> GetPassagers() {
@@ -29,12 +29,12 @@ public class Wagons {
         return pos;
     }
 
-    public Positions SetPosition(Positions position) {
-        return pos = position;
+    public void SetPosition(Positions position) {
+        this.pos = position;
     }
 
     public void GetOnW() {
-        
+
     }
 
     public void GetOffW() {

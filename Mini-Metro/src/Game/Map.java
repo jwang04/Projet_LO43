@@ -12,6 +12,8 @@ public class Map {
     private Scores          score     = new Scores();
     private List<Stations>  stations  = new LinkedList<Stations>();
     private List<Passagers> passagers = new LinkedList<Passagers>();
+    private List<Wagons>    wagons    = new LinkedList<Wagons>();
+    private List<Trains>    trains    = new LinkedList<Trains>();
     private Stations        sta       = new Stations();
 
     public void PutLignes(Lignes ligne) {
@@ -22,8 +24,16 @@ public class Map {
 
     }
 
+    public void AddTrains(Trains train) {
+        trains.add(train);
+    }
+
     public void AddStations(Stations station) {
         stations.add(station);
+    }
+
+    public void AddWagons(Wagons wa) {
+        wagons.add(wa);
     }
 
     public void SetStations(Stations station) {
@@ -43,7 +53,7 @@ public class Map {
     }
 
     public void SetScores() {
-
+        score.AddScores();
     }
 
     public void AddPassagers(Passagers passager) {
