@@ -1,4 +1,4 @@
-package Game;
+package Model;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -42,7 +42,11 @@ public class Lignes {
     }
 
     public void NextRoutes(Trains train) {
-
+    	Stations NewStart = new Stations();
+    	Stations NewTerminal = new Stations();
+    	this.Start = NewStart;
+    	this.Terminal = NewTerminal;
+    	AddTrain(train);
     }
 
     public void Transfer(Trains train, Stations station) {
