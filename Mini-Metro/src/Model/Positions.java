@@ -1,4 +1,4 @@
-package Game;
+package Model;
 
 /**
  * Created by Michel HUANG
