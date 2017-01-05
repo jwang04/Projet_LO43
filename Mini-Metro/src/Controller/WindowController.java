@@ -12,9 +12,9 @@ import javafx.scene.control.Button;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 
-public class FenetreCtrl extends Application{
+public class WindowController extends Application{
 	
-	FenetreVue fenetre = new FenetreVue();
+	WindowView fenetre = new WindowView();
 	ButtonView button = new ButtonView();
 	
 	 public static void main(String[] args) {

@@ -3,7 +3,7 @@ package View;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class FenetreVue {
+public class WindowView {
 	private double Witdh = 1200;
 	private double Height = 800;
 	private String Title = "Mini-Metro";
