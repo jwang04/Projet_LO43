@@ -7,13 +7,17 @@ public class WindowView {
 	private double Witdh = 1200;
 	private double Height = 800;
 	private String Title = "Mini-Metro";
-	private String URL = "file:/Background.png";
+	private String URL = "/Resource/Background.png";
 	
 	Image ImageBack = new Image(URL, true);
-	ImageView iv = new ImageView();
+	ImageView iv = new ImageView(ImageBack);
 	
 	public void SetImage(){
+		iv.setFitHeight(Height);
+		iv.setFitWidth(Witdh);
+		iv.setSmooth(true);
 		iv.setImage(ImageBack);
+		//System.out.println("Image loaded");
 	}
 	
 	public ImageView GetIV(){
