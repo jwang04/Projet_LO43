@@ -57,16 +57,16 @@ public class WindowController extends Application{
 					@Override
 					public void handle(ActionEvent event) {
 						System.out.println("Commencer le jeu");
-						init();
+						//init();
 					}
 		        	
 		        });
 	    }
 	    
-	    public void init(){
-	    	Rectangle rectangle = new Rectangle(30,30,30,30);
-	    	rectangle.setFill(Color.BLACK);
-	    	root.getChildren().add(rectangle);
-	    }
+	   // public void init(){
+	    //	Rectangle rectangle = new Rectangle(30,30,30,30);
+	    //	rectangle.setFill(Color.BLACK);
+	    //	root.getChildren().add(rectangle);
+	    //}
 
 }
