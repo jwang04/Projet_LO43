@@ -1,5 +1,6 @@
 package Model;
 
+
 public class Scores {
 
     private int points;
@@ -10,6 +11,7 @@ public class Scores {
 
     public void AddScores() {
         this.points++;
+        //System.out.println(points);
     }
 
     public int GetScore() {
